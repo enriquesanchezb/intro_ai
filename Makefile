@@ -2,7 +2,9 @@ all: install run
 
 install:
 	brew install ollama
-
+	pip3 install poetry
+	poetry install
+	
 run:
 	ollama run mistral
 
